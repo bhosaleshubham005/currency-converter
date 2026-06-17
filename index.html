@@ -3,31 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency Converter</title>
     <link rel="stylesheet" href="/currency-converter/index.css">
+
 </head>
 <body>
+
     <div id="container">
+        <h1>Currency Converter</h1>
 
-        <h1>currency converter</h1>
-     <input type="number" placeholder="Enter amount" id="input">
-     
-     <select id="currency">
-        <option value="INR">INR</option>
-                <option value="AED">AED</option>
-                        <option value="USD">DOLLAR</option>
+        <input
+            type="number"
+            id="input"
+            placeholder="Enter amount"
+        >
 
+        <br><br>
 
-     </select>
-         
-         <button onclick="convert()">click here</button>
+        <label>From:</label>
+        <select id="inputcrncy">
+            <option value="INR">INR</option>
+            <option value="AED">AED</option>
+            <option value="USD">USD</option>
+        </select>
 
-        <div id="result"></div>
+        <br><br>
 
+        <label>To:</label>
+        <select id="currency">
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+            <option value="AED">AED</option>
+        </select>
 
-    
+        <br><br>
+
+        <button onclick="convert()">
+            Convert
+        </button>
+
+        <h3 id="result"></h3>
     </div>
 
     <script src="/currency-converter/index.js"></script>
+
 </body>
 </html>
